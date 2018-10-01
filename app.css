@@ -1,0 +1,62 @@
+.detailed-car-image{
+    height: 200px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.phone-block {
+    height: 36px;
+}
+
+.modal {
+    display: block;
+}
+
+/* Animations Vue */
+
+/* *-enter */
+/* *-enter-active */
+/* *-enter-to */
+/* *-leave */
+/* *-leave-active */
+/* *-leave-to */
+
+.phone-enter-active, .phone-leave-active {
+    transition: all .5s;
+}
+
+.phone-enter, .phone-leave-to {
+    transform: translateX(50px);
+    opacity: 0;
+}
+.model-enter-active {
+    transition: all .5s;
+}
+
+.model-enter, .model-leave-to {
+    transform: translateY(100px);
+}
+
+.fade-enter-active {
+    animation: .75s fade forwards;
+}
+
+.fade-leave-active {
+    animation: .75s fade reverse;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .5;
+    }
+}
